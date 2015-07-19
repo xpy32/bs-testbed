@@ -1,6 +1,6 @@
 *, *:before, *:after {box-sizing:  border-box !important;}
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 .starter-template {
   padding: 40px 15px;
