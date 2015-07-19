@@ -1,0 +1,25 @@
+<!-- row
+<div class="row">
+  <div class="col-xs-2">
+    <button class="btn btn-primary btn-xs" type="button">
+      学过 <span class="badge">4</span>
+    </button>
+  </div>
+  <div class="col-xs-2">
+    <button class="btn btn-primary btn-xs" type="button">
+      在学 <span class="badge">5</span>
+    </button>
+  </div>
+  <div class="col-xs-2">
+    <button class="btn btn-primary btn-xs" type="button">
+      想学 <span class="badge">99</span>
+    </button>
+  </div>
+  <div class="col-xs-2 pull-right">
+    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 10
+  </div>
+</div>
+-->
+
+
+===========
