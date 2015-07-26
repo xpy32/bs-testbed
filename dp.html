@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>Starter Template for Bootstrap</title>
+  <title>熊孩纸｜只为孩子灿烂的笑容</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,8 +52,8 @@
         <div class="thumbnail text-left">
           <img src="51Rf1BhQy7L.jpg" alt="test">
           <h4>世界经典童话明星故事:动物小精灵</h4>
-          <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 4.8公里 北京市朝阳区</p>
-          <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> （010）10000000</p>
+          <p>价格：<strong class="text-danger">¥69.00</strong></p>
+          <p>阅读年龄：6-10</p>
         </div>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -63,7 +63,7 @@
             <div class="row">
               <div class="col-xs-3">
                 <button class="btn btn-info btn-xs" type="button">
-                  想学 <span class="badge">99</span>
+                  想读 <span class="badge">99</span>
                 </button>
               </div>
               <div class="col-xs-9">
@@ -78,7 +78,7 @@
               <div class="row">
                 <div class="col-xs-3">
                   <button class="btn btn-info btn-xs" type="button">
-                    在学 <span class="badge">9</span>
+                    在读 <span class="badge">9</span>
                   </button>
                 </div>
                 <div class="col-xs-9">
@@ -92,8 +92,8 @@
                 </div>
                 <div class="row">
                   <div class="col-xs-3">
-                    <button class="btn btn-info btn-xs" type="button">
-                      学过 <span class="badge">5</span>
+                    <button class="btn btn-default btn-xs" type="button" disabled="disabled">
+                      读过 <span class="badge">5</span>
                     </button>
                   </div>
                   <div class="col-xs-9">
@@ -206,16 +206,62 @@
                     <li>
                       <p>
                         <button class="btn btn-success btn-xs" type="button">
-                          有点小贵 <span class="badge">9</span>
+                          有点小贵 <span class="badge">11</span>
                         </button>
                       </p>
                     </li>
-                    <li>
-                      <p>
-                        <a href="#">查看更多...</a>
-                      </p>
-                    </li>
                   </ul>
+                  <!-- toggle to see more user tags FIXME fix the empty space between show and hide section -->
+                  <div class="row-hide">
+                    <div class="span4 collapse-group">
+                      <ul class="list-inline collapse">
+                        <li>
+                          <p>
+                            <button class="btn btn-info btn-xs" type="button">
+                              有点小贵 <span class="badge">9</span>
+                            </button>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <button class="btn btn-default btn-xs" type="button">
+                              有点小贵 <span class="badge">9</span>
+                            </button>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <button class="btn btn-danger btn-xs" type="button">
+                              有点小贵 <span class="badge">9</span>
+                            </button>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <button class="btn btn-success btn-xs" type="button">
+                              有点小贵 <span class="badge">10</span>
+                            </button>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <button class="btn btn-success btn-xs" type="button">
+                              有点小贵 <span class="badge">10</span>
+                            </button>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <button class="btn btn-success btn-xs" type="button">
+                              有点小贵 <span class="badge">10</span>
+                            </button>
+                          </p>
+                        </li>
+                      </ul>
+                      <p><a class="btn-hide" href="#">查看更多 &raquo;</a></p>
+                    </div>
+                  </div>
+                  <!-- toggle ends-->
                 </div>
               </div>
               <div class="panel panel-default">
@@ -236,5 +282,14 @@
         <script src="dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script type="text/javascript">
+        // toggle to see more user tags
+        $('.row-hide .btn-hide').on('click', function(e) {
+          e.preventDefault();
+          var $this = $(this);
+          var $collapse = $this.closest('.collapse-group').find('.collapse');
+          $collapse.collapse('toggle');
+        });
+        </script>
       </body>
       </html>
